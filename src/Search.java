@@ -1,5 +1,9 @@
 import java.util.*;
 
+/**
+ * Facilitates searching based on key words in website
+ * @author Jeffery Tan
+ */
 public class Search {
     private static final int MAX_SIZE = 10;
     private static final int MAX_PREFIX = 5;

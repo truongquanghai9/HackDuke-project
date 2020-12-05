@@ -1,5 +1,11 @@
 
 import java.util.*;
+
+/**
+ * Creates Topic Class for main topics on website
+ * @author Jeffery Tan
+ */
+
 public class Topic {
     private String[] topics = {"biology", "chemistry", "physics", "math", "computer science"};
 

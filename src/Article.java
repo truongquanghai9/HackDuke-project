@@ -1,4 +1,10 @@
 import java.time.LocalDate;
+
+/**
+ * Creates Article Class for each article on website
+ * @author Jeffery Tan
+ */
+
 public class Article {
     public static final int WORD_LIMIT_ABSTRACT = 250;
     private Topic myTopic;
