@@ -6,7 +6,8 @@ public class Topic {
     private String myTopic;
 
     public Topic(String topic){
-        if(!Arrays.asList(topics).contains(topic)){
+        String lower = topic.toLowerCase();
+        if(!Arrays.asList(topics).contains(lower)){
             myTopic = "other";
         }
         else{
@@ -16,5 +17,4 @@ public class Topic {
     public String getTopic(){
         return myTopic;
     }
-
 }
