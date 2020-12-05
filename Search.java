@@ -5,7 +5,7 @@ public class Search {
 		ArrayList<Article> titleArray = new ArrayList<Article>();
 		for (int i = 0; i < article.length; i++) {
 			for (int j = 0; i < tempString.length; j++) {
-				if (article[i].getTitle().indexOf(tempString[i])) {
+				if (tempString[i].indexOf(article[i].getTitle()) || tempString[i].equalsIgnoreCase(article[i].getTopic())) {
 					titleArray.add(article[i]);
 					break;
 				}
