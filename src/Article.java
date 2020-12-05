@@ -1,4 +1,4 @@
-import java.util.*;
+import java.time.LocalDate;
 public class Article {
     public static final int WORD_LIMIT_ABSTRACT = 250;
     private Topic myTopic;
@@ -6,8 +6,8 @@ public class Article {
     private String myLink;
     private String myAbstract;
     private String myPost;
-
-    public Article(Topic topic, String title, String link, String abs, String post){
+    private LocalDate dayPosted;
+    public Article(Topic topic, String title, String link, String abs, String post, LocalDate date){
         myTopic = topic;
         myTitle = title;
         myLink = link;
@@ -18,6 +18,7 @@ public class Article {
             myAbstract = "";
         }
         myPost = post;
+        dayPosted = date;
     }
 
     public Topic getTopic(){
@@ -34,6 +35,9 @@ public class Article {
     }
     public String getPost(){
         return myPost;
+    }
+    public LocalDate getDayPosted(){
+        return dayPosted;
     }
 
 }
