@@ -13,9 +13,13 @@ public class Filter {
         ArrayList<Article> ret = new ArrayList<>();
 
         for(Article a : articles){
-            if(a.getTopic().equals(topic)){
+            if(a.getTopic().equals(topic.toLowerCase())){
                 ret.add(a);
+                if (ret.size()== MAX_SIZE){
+                    return ret;
+                }
             }
+
         }
         return ret;
     }

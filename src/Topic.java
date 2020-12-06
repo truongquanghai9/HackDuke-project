@@ -17,7 +17,7 @@ public class Topic {
             myTopic = "other";
         }
         else{
-            myTopic = topic;
+            myTopic = lower;
         }
     }
     public String getTopic(){

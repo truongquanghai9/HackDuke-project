@@ -12,7 +12,7 @@ public class Search {
         Comparator<String> stringLengthComparator = Comparator.comparingInt(String::length);
         PriorityQueue<String> keywords = new PriorityQueue<>(stringLengthComparator);
 
-        for(String word : search.split(" ")){
+        for(String word : search.toLowerCase().split(" ")){
             if(keywords.size()< MAX_PREFIX){
                 keywords.add(word);
             }
@@ -25,7 +25,7 @@ public class Search {
         TreeMap<Integer, ArrayList<Article>> compare = new TreeMap<>(Collections.reverseOrder());
 
         for(Article a : articles){
-            ArrayList<String> words = new ArrayList<>(Arrays.asList(a.getTitle().split(" ")));
+            ArrayList<String> words = new ArrayList<>(Arrays.asList(a.getTitle().toLowerCase().split(" ")));
             words.retainAll(keywords);
             int matches = words.size();
             compare.putIfAbsent(matches, new ArrayList<Article>());
