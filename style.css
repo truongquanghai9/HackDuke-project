@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+        /*==== HEADER SECTION ====*/
+
+header{
+    background-color: #464646;
+    height: 50px;
+    margin: 0;
+    position: fixed;
+     top: 0;
+    z-index: 1;
+    width: 100%;
+
+}
+.reSi-brandName{
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    position: relative;
+    top: 19.5px;
+    left: 45px;
+}
+/*--Search bar--*/
+.reSi-searchBar{
+   
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    border-radius: 7px;
+    color: rgb(219, 219, 219);
+    font-size: 12px;
+    height: 18px;
+    position: absolute;
+    right: 105px;
+    top: 20px;
+    width: 120px;
+}
+
+/*-- search button --*/
+button{
+    border: none;
+    border-radius: 7px;
+    background-color: #54e346;
+    height: 18px;
+    font-size: 13px;
+    padding-bottom: 2.5px;
+    position: absolute;
+    top: 20px;
+    right: 105px;
+    width: 40px;
+}
+.fa-search {    
+    color: #fff;
+}
+/*--Home icon--*/
+.fa-home{
+    color: #fff;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+
+}
+/*--- Topics ---*/
+.reSi-topics{
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 43px;
+}
+/*--drop-down menu icon--*/
+.fa-angle-down{
+    color: #fff;
+
+}
+/* ---user icon-- */
+.fa-user{
+    color: #fff;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+/* === Topics === */
+.reSi-topics-menu-item{
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 7px;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    right: -15px;
+    width: 150px;
+    height: 200px;
+}
+.reSi-topics-menu-item a{
+    color: #000;
+    display: block;
+    line-height: 17px;
+    text-decoration: none;
+}
+.reSi-topics:hover .reSi-topics-menu-item{
+    display: block;
+}
+.reSi-topics:hover body {
+    background-color: res;
+}
+/*===== MAIN SECTION =====*/
+.reSi-post{
+    
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 5px;
+    height: 270px;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    top: 90px;
+    left: 8%;
+    width: 300px;
+}
+
+.reSi-post h2{
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.reSi-user-icon{
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  
+}
+.reSi-user-name{
+    display: inline-block;
+    font-size: 10px;
+    position: absolute;
+    top: 15px;
+    left: 35px
+}
+.reSi-follow-btn{
+    display: inline-block;
+    font-size: 9px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.reSi-article{
+    font-size:13px;
+    padding-top: 10px;
+}
+.fa-plus-circle{
+    color: red;
+     position: fixed;
+     top: 90vh;
+     right: 25px;
+     z-index:1;
+}
